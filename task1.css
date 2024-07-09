@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-image: linear-gradient(to right, #4CAF50 , #2196F3);
+  }
+  
+  .menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #4CAF50 , #2196F3);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .content {
+    margin-top: 80px; /* Adjust according to the height of your navigation menu */
+    height: 2000px; /* Just for demonstration, replace with your actual content */
+  }
+  
+  .toggle-menu {
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    display: none;
+  }
+  
+  @media(max-width: 768px) {
+    .menu {
+      display: none;
+    }
+    .toggle-menu {
+      display: block;
+    }
+    .container {
+      justify-content: space-between;
+    }
+  }
+  
